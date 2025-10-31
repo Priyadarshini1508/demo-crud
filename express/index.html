@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection CRUD</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Book Collection Manager</h1>
+        
+        <h2>Add New Book</h2>
+        <form id="bookForm">
+            <div class="form-group">
+                <label for="name">Book Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" required>
+            </div>
+            <div class="form-group">
+                <label for="publicationHouse">Publisher:</label>
+                <input type="text" id="publicationHouse">
+            </div>
+            <div class="form-group">
+                <label for="publicationDate">Publication Date:</label>
+                <input type="date" id="publicationDate">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN (Optional):</label>
+                <input type="text" id="isbn">
+            </div>
+            <button type="submit">Save Book</button>
+        </form>
+
+        <hr>
+
+        <h2>Book List</h2>
+        <ul id="bookList">
+            </ul>
+    </div>
+
+    <script src="app.js"></script> 
+</body>
+</html>
